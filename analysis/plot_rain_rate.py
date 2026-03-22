@@ -4,17 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from analysis.helpers import nanmean_after_z_score
-# from analysis.plot_order import ploting_function
 from constants import CML, GAUGE, X_AXIS,MISSPECIFIED
 
 
-# def nanmean_after_z_score(results, axis=1, threshold=3):
-#     mu = np.nanmean(results, axis=axis, keepdims=True)
-#     std = np.nanstd(results, axis=axis, keepdims=True)
-#     z_score = (np.abs(results - mu)) / std
-#     mask = z_score < threshold
-#     masked_results = np.where(mask, results, np.nan)
-#     return np.nanmean(masked_results, axis=axis)
 
 
 with open("/data/projects/RainFieldMisspecifiedCRB/results/results_rain_rate_8_random_2_6_196_new.pkl", "rb") as f:

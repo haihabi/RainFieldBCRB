@@ -11,13 +11,10 @@ def gamma_pdf(in_x, in_alpha, in_beta):
 
 x = np.linspace(0.001, 40, 1000)
 
-# plt.plot(x, gamma_pdf(x, 1, 2))
-# plt.plot(x, gamma_pdf(x, 20, 2))
+
 plt.plot(x, gamma_pdf(x, 3, 2))
 plt.plot(x, gamma_pdf(x,5, 2))
 plt.plot(x, gamma_pdf(x,12, 2))
 plt.plot(x, gamma_pdf(x,30, 2))
 plt.plot(x, gamma_pdf(x,30, 1.2))
 plt.show()
-# x = np.linspace(gamma.ppf(0.01, a),
-#                 gamma.ppf(0.99, a), 100)

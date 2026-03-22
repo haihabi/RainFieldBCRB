@@ -1,4 +1,3 @@
-import bounds
 import signal_model
 from bounds.parameter import Parameter
 from constants import MISSPECIFIED, GAUGE, CML, X_AXIS

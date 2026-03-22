@@ -67,13 +67,6 @@ class BSplineRainFieldGenerator():
         self.axis_size = in_axis_size
 
     def generate_filed(self, in_order, n_knots_base=10) -> BSplineRainField:
-        #     knots = np.linspace(-self.axis_size / 2, self.axis_size / 2, self.n_knots + 1)
-        #     delta = np.diff(knots)[0]
-        #     for _ in range(in_order):
-        #         shift_knots = knots - delta / 2
-        #         knots = np.concatenate([shift_knots, np.asarray([knots[-1] + delta / 2])])
-        #
-        #     return BSplineRainField(self.axis_size, in_order, knots)
         if self.fild_type == BSplineType.ORDEREDGEFILLED:
             knots = np.linspace(-self.axis_size / 2, self.axis_size / 2, n_knots_base)
             if len(np.unique(knots[:in_order + 1])) != 1:  # last and first knots multiplicty is always d

@@ -1,7 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-from analysis.plot_field import n_sensors
 
 a = [(np.float64(0.09053187543872399), np.float64(0.09677311873434487), np.float64(0.0033389710647599644),
       np.float64(0.0953485745366047)),

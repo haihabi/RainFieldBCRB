@@ -3,18 +3,13 @@ import numpy as np
 import bounds
 from signal_model import SamplerConfig, LineNormalization
 from signal_model.spline_field.bspline import BSplineRainField, create_projection_matrix
-from torch import nn
 from tqdm import tqdm
 from matplotlib import pyplot as plt
 
 from utils import plot_sensors_map
 
 
-class BSplinePointSensor(nn.Module):
-    def __init__(self):
-        super(BSplinePointSensor, self).__init__()
 
-    pass
 
 
 def find_point_sensors(n_p: int, d: int, link_sampler, in_rain_field: BSplineRainField,
