@@ -1,0 +1,10 @@
+line_color = "green"
+point_color = "red"
+point_mark = "--"
+line_mark = None
+ORDER_LIST= [0, 1, 2, 3, 4, 5]
+GAUGE="Gauge"
+CML= "CML"
+MISSPECIFIED="Misspecified CML"
+MIXER="Mixer"
+X_AXIS="X-axis"
